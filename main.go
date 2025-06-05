@@ -15,10 +15,9 @@ func main() {
 		ctx.HTML(200, "index.html", gin.H{
 			"Title":   "Welcome",
 			"Message": "Welcome to GoWeb",
-
 		})
 	})
 
-	app.Run((":8080"))
+	app.Run(("0.0.0.0:8080"))
 
 }
