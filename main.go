@@ -1,10 +1,9 @@
 package main
 
 import (
+	"github.com/gin-gonic/gin"
 	"net/http"
 	"syscall"
-
-	"github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -20,7 +19,7 @@ func main() {
 	r.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", gin.H{
 			"title":   "Welcome",
-			"message": "Welcome to Goweb",
+			"message": "Welcome to Goweb!",
 		})
 	})
 
